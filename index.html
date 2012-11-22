@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Custom Form</title>
+	<style type="text/css">
+		span.checkbox{
+			display: block;
+			border: 2px groove #333;
+			height: 6px;
+			width: 6px;
+		}
+		span.checkbox.checked{
+			background-color: #ccc;
+		}
+		span.checkbox.disabled{
+			border-color: #ccc;
+		}
+		span.checkbox.click{
+			background: #f50;
+		}
+		span.radio{
+			border-radius: 8px;
+			display: block;
+			border: 2px solid #f61;
+			height: 8px;
+			width: 8px;
+		}
+		span.radio.checked{
+			border: 2px solid #f11;
+			background-color: #ccc;
+		}
+		span.radio.disabled{
+			border-color: #666;
+		}
+		span.radio.click{
+			background: #f50;
+		}
+		span.select{
+			border: 2px outset #000;
+			background: #f61;
+			display: block;
+			text-align: center;
+		}
+		span.select.disabled{
+			background: #cea000;
+		}
+	</style>
+</head>
+<body>
+<h1>Custom Forms</h1>
+<form action="" class="test javascript class">
+	<fieldset>
+		<select name="" id="">
+			<option value="optionQ">Option Q</option>
+			<option value="optionW">Option W</option>
+			<option value="optionE">Option E</option>
+			<option value="optionR">Option R</option>
+			<option value="optionT">Option T</option>
+			<option value="optionY">Option Y</option>
+		</select>
+		<select name="" id="">
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<input type="checkbox" name="checkbox" id="checkbox1" /><label for="checkbox1">checkbox 1</label>
+		<input type="checkbox" name="checkbox" id="checkbox2" /><label for="checkbox2">checkbox 2</label>
+		<input type="checkbox" name="checkbox" id="checkbox3" /><label for="checkbox3">checkbox 3</label>
+		<input type="checkbox" name="checkbox" id="checkbox4" /><label for="checkbox4">checkbox 4</label>
+		<input type="checkbox" name="checkbox" id="checkbox5" /><label for="checkbox5">checkbox 5</label>
+	</fieldset>
+	<fieldset>
+		<input type="radio" name="radio" id="radio1" />
+		<label for="radio1">Radio 1</label>
+		<input type="radio" name="radio" id="radio2" />
+		<label for="radio2">Radio 2</label>
+		<input type="radio" name="radio" id="radio3" />
+		<label for="radio3">Radio 3</label>
+		<input type="radio" name="radio" id="radio4" />
+		<label for="radio4">Radio 4</label>
+		<input type="radio" name="radio" id="radio5" />
+		<label for="radio5">Radio 5</label>
+	</fieldset>
+	<!--fieldset>
+		<input type="file" name="file" id="file1" />
+		<input type="file" name="file" id="file2" />
+		<input type="file" name="file" id="file3" />
+	</fieldset-->
+</form>
+<hr />
+<form action="" id="custom" class="test form class custom">
+	<fieldset>
+		<p>
+			<select name="select1" id="">
+				<option value="optionQ">Option Q</option>
+				<option value="optionW">Option W</option>
+				<option value="optionE">Option E</option>
+				<option value="optionR">Option R</option>
+				<option value="optionT">Option T</option>
+				<option value="optionY">Option Y</option>
+			</select>
+		</p>
+		<p>
+			<select name="select2" id="" disabled="disabled">
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+				<option value="option4">Option 4</option>
+				<option value="option5">Option 5</option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+				<option value="option4">Option 4</option>
+				<option value="option5">Option 5</option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+				<option value="option4">Option 4</option>
+				<option value="option5">Option 5</option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+				<option value="option4">Option 4</option>
+				<option value="option5">Option 5</option>
+			</select>
+			(Disabled)
+		</p>
+	</fieldset>
+	<fieldset>
+		<input type="checkbox" name="custom_checkbox" id="custom_checkbox1" /><label for="custom_checkbox1">checkbox 1</label>
+		<input type="checkbox" name="custom_checkbox" id="custom_checkbox2" disabled="disabled" /><label for="custom_checkbox2">checkbox 2 (disabled)</label>
+		<input type="checkbox" name="custom_checkbox" id="custom_checkbox3" /><label for="custom_checkbox3">checkbox 3</label>
+		<input type="checkbox" name="custom_checkbox" id="custom_checkbox4" /><label for="custom_checkbox4">checkbox 4</label>
+		<input type="checkbox" name="custom_checkbox" id="custom_checkbox5" checked="checked" /><label for="custom_checkbox5">checkbox 5 (default checked)</label>
+	</fieldset>
+	<fieldset>
+		<input type="radio" name="custom_radio" id="custom_radio1" />
+		<label for="custom_radio1">Radio 1</label>
+		<input type="radio" name="custom_radio" id="custom_radio2" />
+		<label for="custom_radio2">Radio 2</label>
+		<input type="radio" name="custom_radio" id="custom_radio3" />
+		<label for="custom_radio3">Radio 3</label>
+		<input type="radio" name="custom_radio" id="custom_radio4" />
+		<label for="custom_radio4">Radio 4</label>
+		<input type="radio" name="custom_radio" id="custom_radio5" disabled="disabled" />
+		<label for="custom_radio5">Radio 5 (disabled)</label>
+	</fieldset>
+	<!--fieldset>
+		<input type="file" name="custom_file" id="custom_file1" />
+		<input type="file" name="custom_file" id="custom_file2" />
+		<input type="file" name="custom_file" id="custom_file3" />
+	</fieldset-->
+</form>
+<script type="text/javascript" src="jquery-1.8.2.js"></script>
+<script type="text/javascript" src="customform.js"></script>
+<script type="text/javascript">
+	var customform = new CustomForm('#custom');
+</script>
+</body>
+</html>
