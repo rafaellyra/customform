@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Custom Form</title>
+    <title>Custom Form Examples</title>
 	<style type="text/css">
 		span.checkbox{
 			display: block;
@@ -49,9 +49,11 @@
 </head>
 <body>
 <h1>Custom Forms</h1>
-<form action="" class="test javascript class">
+<form action="" id="customForm1" class="test javascript">
+	<legend>Customize elements with selectors</legend>
 	<fieldset>
-		<select name="" id="">
+		<select name="customForm1_select" id="" class="customized">
+			<option value="">Custom select</option>
 			<option value="optionQ">Option Q</option>
 			<option value="optionW">Option W</option>
 			<option value="optionE">Option E</option>
@@ -83,17 +85,17 @@
 		</select>
 	</fieldset>
 	<fieldset>
-		<input type="checkbox" name="checkbox" id="checkbox1" /><label for="checkbox1">checkbox 1</label>
-		<input type="checkbox" name="checkbox" id="checkbox2" /><label for="checkbox2">checkbox 2</label>
+		<input type="checkbox" name="checkbox" id="checkbox1" class="customized" /><label for="checkbox1">custom checkbox 1</label>
+		<input type="checkbox" name="checkbox" id="checkbox2" class="customized" /><label for="checkbox2">custom checkbox 2</label>
 		<input type="checkbox" name="checkbox" id="checkbox3" /><label for="checkbox3">checkbox 3</label>
 		<input type="checkbox" name="checkbox" id="checkbox4" /><label for="checkbox4">checkbox 4</label>
 		<input type="checkbox" name="checkbox" id="checkbox5" /><label for="checkbox5">checkbox 5</label>
 	</fieldset>
 	<fieldset>
-		<input type="radio" name="radio" id="radio1" />
-		<label for="radio1">Radio 1</label>
-		<input type="radio" name="radio" id="radio2" />
-		<label for="radio2">Radio 2</label>
+		<input type="radio" name="radio" id="radio1" class="customized" />
+		<label for="radio1">Custom Radio 1</label>
+		<input type="radio" name="radio" id="radio2" class="customized" />
+		<label for="radio2">Custom Radio 2</label>
 		<input type="radio" name="radio" id="radio3" />
 		<label for="radio3">Radio 3</label>
 		<input type="radio" name="radio" id="radio4" />
@@ -108,7 +110,8 @@
 	</fieldset-->
 </form>
 <hr />
-<form action="" id="custom" class="test form class custom">
+<form action="" id="customForm2" class="test form class custom">
+	<legend>Customize all form elements</legend>
 	<fieldset>
 		<p>
 			<select name="select1" id="">
@@ -165,16 +168,83 @@
 		<input type="radio" name="custom_radio" id="custom_radio5" disabled="disabled" />
 		<label for="custom_radio5">Radio 5 (disabled)</label>
 	</fieldset>
+</form>
+<hr/>
+<form action="" id="defaultForm" class="test javascript">
+	<lengend>Default</lengend>
+	<fieldset>
+		<select name="" id="customForm1_select">
+			<option value="optionQ">Option Q</option>
+			<option value="optionW">Option W</option>
+			<option value="optionE">Option E</option>
+			<option value="optionR">Option R</option>
+			<option value="optionT">Option T</option>
+			<option value="optionY">Option Y</option>
+		</select>
+		<select name="" id="">
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+			<option value="option5">Option 5</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<input type="checkbox" name="checkbox" id="checkbox1" /><label for="checkbox1">checkbox 1</label>
+		<input type="checkbox" name="checkbox" id="checkbox2" /><label for="checkbox2">checkbox 2</label>
+		<input type="checkbox" name="checkbox" id="checkbox3" /><label for="checkbox3">checkbox 3</label>
+		<input type="checkbox" name="checkbox" id="checkbox4" /><label for="checkbox4">checkbox 4</label>
+		<input type="checkbox" name="checkbox" id="checkbox5" class="customized" /><label for="checkbox5">this element has a class 'customized', but the form is not customized</label>
+	</fieldset>
+	<fieldset>
+		<input type="radio" name="radio" id="radiox" class="customized" />
+		<label for="radiox">this element has a class 'customized', but the form is not customized</label>
+		<input type="radio" name="radio" id="radioy" class="customized" />
+		<label for="radioy">this element has a class 'customized', but the form is not customized</label>
+		<input type="radio" name="radio" id="radioz" />
+		<label for="radioz">Radio Z</label>
+		<input type="radio" name="radio" id="radiol" />
+		<label for="radiol">Radio L</label>
+		<input type="radio" name="radio" id="radiow" />
+		<label for="radiow">Radio W</label>
+	</fieldset>
 	<!--fieldset>
-		<input type="file" name="custom_file" id="custom_file1" />
-		<input type="file" name="custom_file" id="custom_file2" />
-		<input type="file" name="custom_file" id="custom_file3" />
+		<input type="file" name="file" id="file1" />
+		<input type="file" name="file" id="file2" />
+		<input type="file" name="file" id="file3" />
 	</fieldset-->
 </form>
 <script type="text/javascript" src="jquery-1.8.2.js"></script>
-<script type="text/javascript" src="customform.min.js"></script>
+<script type="text/javascript" src="customform.js"></script>
 <script type="text/javascript">
-	var customform = new CustomForm('#custom');
+	var info1 = {
+		'form' : '#customForm1',
+		'selector' : '.customized'
+	}
+	var info2 = {
+		'form' : '#customForm2'
+	}
+	var customform1 = new CustomForm(info1);
+	var customform2 = new CustomForm(info2);
+	customform1.customizeInputs();
+	customform1.customizeSelects();
+	customform2.customizeInputs();
+	customform2.customizeSelects();
 </script>
 </body>
 </html>
