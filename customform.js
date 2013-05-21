@@ -106,7 +106,7 @@ CustomForm.prototype.choose = function (e) {
         if (options[i].selected === true) {
             name = e.currentTarget.name.replace(/\[/g, '_').replace(/\]/g, '_');
             value = options[i].text;
-            id = 'select-' + name;
+            id = 'select_' + name;
             select = document.getElementById(id);
             select.innerHTML = value;
         }
